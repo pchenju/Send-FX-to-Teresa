@@ -11,7 +11,6 @@ import os
 # usd_to_ntd = json.loads(convert('usd', 'twd', 1))['amount']
 # ntd_to_jpy = json.loads(convert('twd', 'jpy', 1))['amount']
 
-# google currency
 def get_google_currency(source_currency, target_currency):
     url = f"https://www.google.com/search?q={source_currency}+to+{target_currency}"
     response = requests.get(url)
